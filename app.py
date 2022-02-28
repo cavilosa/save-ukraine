@@ -33,6 +33,13 @@ def contacts():
     return render_template("pages/contacts.html")
 
 
+@app.route("/news", methods = ["GET"])
+@cache.cached(timeout=10)
+def news():
+
+    return render_template("pages/news.html")
+
+
 
 if __name__ == "__main__":
     app.run()
