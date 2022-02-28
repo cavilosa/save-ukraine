@@ -9,8 +9,29 @@ cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 @cache.cached(timeout=10)
 def index():
 
+    return render_template("layouts/main.html", main = True)
 
-    return render_template("layouts/main.html")
+
+@app.route("/about", methods = ["GET"])
+@cache.cached(timeout=10)
+def about():
+
+    return render_template("pages/about.html")
+
+
+@app.route("/donations", methods = ["GET"])
+@cache.cached(timeout=10)
+def donations():
+
+    return render_template("pages/donations.html")
+
+
+@app.route("/contacts", methods = ["GET"])
+@cache.cached(timeout=10)
+def contacts():
+
+    return render_template("pages/contacts.html")
+
 
 
 if __name__ == "__main__":
