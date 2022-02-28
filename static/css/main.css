@@ -35,6 +35,6 @@ menu ul li {
     border-radius: 5px;
 }
 
-menu li:hover{
-    background-color: bisque;
+menu li:hover {
+    text-decoration: underline;
 }
