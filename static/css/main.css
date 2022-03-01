@@ -57,3 +57,16 @@ menu li:hover {
     border-radius: 5px;
     padding: 5px;
 }
+
+.news {
+    align-items: center;
+}
+
+@media only screen and (min-width: 700px){
+    body {
+        width: 70%;
+        margin: auto;
+        font-size: larger;
+    }
+
+}
