@@ -20,7 +20,11 @@ picture img{
     margin:auto;
 }
 
-menu ul{
+menu {
+    padding: 0%;
+}
+
+menu ul {
     list-style-type: none;
     display: flex;
     flex-flow: row;
@@ -31,10 +35,25 @@ menu ul{
 }
 
 menu ul li {
+    list-style-type: none;
     padding: 3px;
     border-radius: 5px;
+    max-width: 20%;
 }
 
 menu li:hover {
     text-decoration: underline;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0%;
+    text-align: center;
+}
+
+.links li {
+    margin: 10px;
+    background-color:rgb(170, 219, 219);
+    border-radius: 5px;
+    padding: 5px;
 }
