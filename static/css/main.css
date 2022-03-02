@@ -52,10 +52,10 @@ menu li:hover {
 }
 
 .links li {
-    margin: 10px;
+    margin: 7vw;
     background-color:rgb(170, 219, 219);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5vw;
 }
 
 .news {
@@ -64,9 +64,13 @@ menu li:hover {
 
 @media only screen and (min-width: 700px){
     body {
-        width: 70%;
+        width: 60%;
         margin: auto;
-        font-size: larger;
+        font-size:x-large;
+    }
+
+    .links li {
+        padding: 4vw;
     }
 
 }
